@@ -1,6 +1,7 @@
 def run():
     years = int(input("how old are you?: "))
-    while years > years
+    for years in range(1, (years + 1)):
+        print(years)
         
 
 
