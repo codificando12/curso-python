@@ -1,14 +1,10 @@
 def is_prime(number):
-
-    for i in range(1, number + 1):
-        if i == 1 or i == number:
-            return True
-        else:
-            return False
-        
     
-
-
+    for i in range(1, number + 1):
+        if number % i == 0: 
+           return False
+    return True
+    
 
 def run():
     number = int(input("Write a numbre: "))
