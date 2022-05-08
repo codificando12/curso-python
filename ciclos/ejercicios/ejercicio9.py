@@ -3,12 +3,15 @@ def run():
     password = input("Write a password: ")
     ask = input("What is your password? ")
     while password != ask:
+        times -= 1
         print("the password is wrong")
-        break
-    print(input("please write it again: "))
-
-    if password == ask:
-        print("the password is correct")
+        print("you have " + str(times) + " left")
+        if times == 0:
+            print("Try again in 10 minutes")
+            break
+        ask = input("Write the password again: ")
+        if password == ask:
+            print("the password is correct")
         
         
 
