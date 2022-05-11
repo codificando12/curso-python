@@ -1,6 +1,7 @@
 def run():
     subjets = ["Math", "Grammar", "History", "Spanish", "Chemistry"]
-    print(subjets)
+    for subject in subjets:
+        print("I study " + subject)
 
 
 if __name__ == "__main__":
