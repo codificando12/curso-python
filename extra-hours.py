@@ -4,9 +4,17 @@ def run():
     if hours > 40:
         extra = hours - 40
         extra_wage = (extra * wage) * 1.5
-        print("Your week salary for this week is " + str(((wage * 40) + extra_wage)))
-        
-
+        print("Working hours " + str(hours) + "\n" + 
+              "Extra hours: " + str(extra) + "\n" +
+              "Normal salary: " + str(wage * 40) + "\n" +
+              "Extra salary: " + str(extra_wage) + "\n" +
+              "Total for this week: " + str((wage * 40) + extra_wage))       
+    else:
+           print("Working hours " + str(hours) + "\n" + 
+              "Extra hours: 0" + "\n" +
+              "Normal salary: " + str(wage * 40) + "\n" +
+              "Extra salary: 0" + "\n" +
+              "Total for this week: " + str(wage * 40))  
 
 if __name__ == "__main__":
     run()
