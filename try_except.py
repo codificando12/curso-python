@@ -2,7 +2,7 @@ def run():
     hour = input("How many hours did you work last week?: ")
     wages = input("How much is your salary per hour? ")
     try:
-        hours = float(hour)
+        hours = int(hour)
         wage = float(wages)
         if hours > 40:
             extra = hours - 40
@@ -20,6 +20,9 @@ def run():
               "Total for this week: " + str(wage * hours))
     except:
         print("Error, please write a number in hours and salary")
+       
+        
+   
       
 
 if __name__ == "__main__":
