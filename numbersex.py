@@ -13,8 +13,8 @@ def run():
             print("Write a valid number")
         
         
-    print(sum(nums))
+    print(sum(nums), len(nums), float(sum(nums) / len(nums)))
     
     
-    if __name__ == "__main__":
-        run()    
+if __name__ == "__main__":
+    run()
