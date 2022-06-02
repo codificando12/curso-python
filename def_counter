@@ -1,17 +1,22 @@
-def run():
-    def letter_counter():
-        word = str(input('Enter a phrase: '))
-        letter = str(input('Write a letter: '))
-        count = 0
-        for letters in word:
-            if letters == letter:
-                count = count + 1
-        return count
+# def run():
+#     def letter_counter():
+#         word = str(input('Enter a phrase: '))
+#         letter = str(input('Write a letter: '))
+#         count = 0
+#         for letters in word:
+#             if letters == letter:
+#                 count = count + 1
+#         return count
     
-    # tying function
-    counter = letter_counter()
-    print(counter)
+#     # tying function
+#     counter = letter_counter()
+#     print(counter)
      
 
-if __name__ == "__main__":
-    run()
+# if __name__ == "__main__":
+#     run()
+
+abc = dict()
+abc['age'] = 21
+abc['course'] = 'programing'
+print(abc)
